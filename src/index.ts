@@ -17,7 +17,7 @@ export function getUsedSFSymbols(text: string): {
   for (const ch of text) {
     if (ch in SfSymbols) {
       let key = (SfSymbols as any)[ch];
-      symbols[key] = (SfSymbols as any)[ch];
+      symbols[key] = ch;
     }
   }
   return {
