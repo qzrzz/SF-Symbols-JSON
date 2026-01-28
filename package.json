@@ -1,0 +1,29 @@
+{
+  "name": "sf-symbols-json",
+  "version": "0.0.1",
+  "module": "./src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts"
+    },
+    "./sf-symbols-chars.json": {
+      "import": "./src/sf-symbols-chars.json"
+    },
+    "./sf-symbols.json": {
+      "import": "./src/sf-symbols.json"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
