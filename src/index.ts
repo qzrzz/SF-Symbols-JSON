@@ -1,4 +1,4 @@
-import SfSymbols from "./sf-symbols-chars.json" assert { type: "json" };
+import SfSymbols from "./sf-symbols-chars.json" with { type: 'json' }
 
 export function hasSFSymbols(text: string) {
   for (const ch of text) {
